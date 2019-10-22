@@ -193,7 +193,7 @@ EOF
 dos2unix buying.sh
 date=$(date +%Y%m%d)
 
-ipadd=$(ifconfig -a | grep -w inet | grep -v 127.0.0.1 | awk 'NR==1{print $2}')
+ipadd=$1
 
 check_file="/tmp/buying_${ipadd}_${date}/check_file/"
 danger_file="/tmp/buying_${ipadd}_${date}/danger_file.txt"
