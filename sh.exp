@@ -15,7 +15,7 @@ expect "Password"
 send "$rootpasswd\r"
 expect "*]#"
 send "chmod 777 /tmp/buying_linuxcheck.sh\r"
-send "sh /tmp/buying_linuxcheck.sh\r"
+send "sh /tmp/buying_linuxcheck.sh $ipaddr\r"
 send "exit\r"
 send "exit\r"
 interact
